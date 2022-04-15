@@ -1,0 +1,12 @@
+syntax = "proto3";
+package pb;
+option go_package = "./";
+
+message TempEvent{
+    int32 deviceId = 1;
+    int32 eventId = 2;
+
+    float humidity = 3;
+    float tempCel = 4;
+    float heatIdxCel = 5;
+}
